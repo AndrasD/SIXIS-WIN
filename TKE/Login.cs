@@ -42,9 +42,10 @@ namespace TKE
 
 		private SqlConnection connection = new SqlConnection();
 
-		private string rendszerconn = "Data Source=DESKTOP-CJI5FT4\\SQLEXPRESS;Initial Catalog=tke;User Id=SkytecUser;Password=PassW0rd_2015;";
+//		private string rendszerconn = "Data Source=DESKTOP-CJI5FT4\\SQLEXPRESS;Initial Catalog=tke;User Id=SkytecUser;Password=PassW0rd_2015;";
+        private string rendszerconn = "Data Source=SZERVER\\SQLEXPRESS;Initial Catalog=tke;User Id=SkytecUser;Password=Passw0rd_2015;";
 
-		private TKE.DataSet dataSet = new TKE.DataSet();
+        private TKE.DataSet dataSet = new TKE.DataSet();
 
 		private DataTable tableUser = new DataTable();
 
