@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <ProjectGuid>{0900EA87-63E3-4924-9C7D-9CC6C7F7121A}</ProjectGuid>
+    <ProjectGuid>{E1EEB054-630E-4A0D-A6A8-F85268167826}</ProjectGuid>
+    <SchemaVersion>2</SchemaVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <AssemblyName>TKE</AssemblyName>
@@ -47,9 +47,6 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ApplicationIcon>Calculator.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System.Windows.Forms" />
@@ -100,14 +97,19 @@
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <AutoGen>true</AutoGen>
+      <DependentUpon>UserControl1.resx</DependentUpon>
+      <DesignTimeSharedInput>true</DesignTimeSharedInput>
+    </Compile>
     <Compile Include="Cachedreport3.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="UserControl1.Designer.cs">
+    <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>true</AutoGen>
-      <DependentUpon>UserControl1.resx</DependentUpon>
+      <DependentUpon>Resources.resx</DependentUpon>
       <DesignTimeSharedInput>true</DesignTimeSharedInput>
     </Compile>
     <Compile Include="DataSetTableAdapters\dolgozoTableAdapter.cs">
@@ -119,50 +121,44 @@
       <DependentUpon>lekerdezes2.resx</DependentUpon>
       <DesignTimeSharedInput>true</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
+    <Compile Include="lekerdezes3.Designer.cs">
+      <AutoGen>true</AutoGen>
+      <DependentUpon>lekerdezes3.resx</DependentUpon>
       <DesignTimeSharedInput>true</DesignTimeSharedInput>
-      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="dolgozo.Designer.cs">
       <AutoGen>true</AutoGen>
       <DependentUpon>dolgozo.resx</DependentUpon>
       <DesignTimeSharedInput>true</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="DataSetTableAdapters\kilometerTableAdapter.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
     <Compile Include="report2.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
       <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Cachedreport2.cs">
-      <AutoGen>false</AutoGen>
-      <DesignTimeSharedInput>false</DesignTimeSharedInput>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="lekerdezes3.Designer.cs">
-      <AutoGen>true</AutoGen>
-      <DependentUpon>lekerdezes3.resx</DependentUpon>
-      <DesignTimeSharedInput>true</DesignTimeSharedInput>
-    </Compile>
-    <Compile Include="DataSetTableAdapters\kilometerTableAdapter.cs">
-      <AutoGen>false</AutoGen>
-      <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
     <Compile Include="lekerdezes1.Designer.cs">
       <AutoGen>true</AutoGen>
       <DependentUpon>lekerdezes1.resx</DependentUpon>
       <DesignTimeSharedInput>true</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="DataSetTableAdapters\TableAdapterManager.cs">
+    <Compile Include="Cachedreport2.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="DataSetTableAdapters\tuloraTableAdapter.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
     <Compile Include="DataSetTableAdapters\TK_ViewTableAdapter.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="DataSetTableAdapters\TableAdapterManager.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
@@ -208,21 +204,21 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>UserControl1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="lekerdezes2.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>lekerdezes2.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="dolgozo.resx">
+    <EmbeddedResource Include="lekerdezes2.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>dolgozo.Designer.cs</LastGenOutput>
+      <LastGenOutput>lekerdezes2.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="lekerdezes3.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>lekerdezes3.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dolgozo.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>dolgozo.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="lekerdezes1.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -239,9 +235,6 @@
     <EmbeddedResource Include="TKE.report1.rpt" />
     <EmbeddedResource Include="TKE.report2.rpt" />
     <EmbeddedResource Include="TKE.report3.rpt" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Calculator.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

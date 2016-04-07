@@ -42,7 +42,7 @@ namespace TKE
 
 		private SqlConnection connection = new SqlConnection();
 
-		private string rendszerconn = "Data Source=SZERVER\\SQLEXPRESS;Initial Catalog=tke;User Id=SkytecUser;Password=Passw0rd_2015;";
+		private string rendszerconn = "Data Source=DESKTOP-CJI5FT4\\SQLEXPRESS;Initial Catalog=tke;User Id=SkytecUser;Password=PassW0rd_2015;";
 
 		private TKE.DataSet dataSet = new TKE.DataSet();
 
@@ -169,184 +169,143 @@ namespace TKE
 
 		private void InitializeComponent()
 		{
-            this.components = new System.ComponentModel.Container();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textPWD = new System.Windows.Forms.TextBox();
-            this.textUser = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.megsem = new System.Windows.Forms.Button();
-            this.rendben = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.verzio = new System.Windows.Forms.Label();
-            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
-            this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Silver;
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(413, 34);
-            this.panel1.TabIndex = 8;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(146, 8);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 24);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Bejelentkezés";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.textPWD);
-            this.panel2.Controls.Add(this.textUser);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.megsem);
-            this.panel2.Controls.Add(this.rendben);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 34);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(413, 153);
-            this.panel2.TabIndex = 9;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::TKE.Properties.Resources.Calculator_icon;
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 18);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(109, 121);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
-            // 
-            // textPWD
-            // 
-            this.textPWD.Location = new System.Drawing.Point(247, 49);
-            this.textPWD.MaxLength = 15;
-            this.textPWD.Name = "textPWD";
-            this.textPWD.Size = new System.Drawing.Size(124, 24);
-            this.textPWD.TabIndex = 7;
-            this.textPWD.UseSystemPasswordChar = true;
-            // 
-            // textUser
-            // 
-            this.textUser.Location = new System.Drawing.Point(247, 21);
-            this.textUser.MaxLength = 30;
-            this.textUser.Name = "textUser";
-            this.textUser.Size = new System.Drawing.Size(124, 24);
-            this.textUser.TabIndex = 6;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(162, 52);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 18);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Jelszó:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(162, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 18);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Azonosító:";
-            // 
-            // megsem
-            // 
-            this.megsem.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.megsem.Image = global::TKE.Properties.Resources.cancel;
-            this.megsem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.megsem.Location = new System.Drawing.Point(277, 90);
-            this.megsem.Name = "megsem";
-            this.megsem.Size = new System.Drawing.Size(104, 38);
-            this.megsem.TabIndex = 11;
-            this.megsem.Text = "Mégsem";
-            this.megsem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.megsem.UseVisualStyleBackColor = true;
-            // 
-            // rendben
-            // 
-            this.rendben.Image = global::TKE.Properties.Resources.accept;
-            this.rendben.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rendben.Location = new System.Drawing.Point(165, 90);
-            this.rendben.Name = "rendben";
-            this.rendben.Size = new System.Drawing.Size(107, 38);
-            this.rendben.TabIndex = 9;
-            this.rendben.Text = "Rendben";
-            this.rendben.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.rendben.UseVisualStyleBackColor = true;
-            this.rendben.Click += new System.EventHandler(this.rendben_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.SystemColors.Control;
-            this.panel3.Controls.Add(this.verzio);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 187);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(413, 22);
-            this.panel3.TabIndex = 10;
-            // 
-            // verzio
-            // 
-            this.verzio.AutoSize = true;
-            this.verzio.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.verzio.Location = new System.Drawing.Point(141, 4);
-            this.verzio.Name = "verzio";
-            this.verzio.Size = new System.Drawing.Size(85, 16);
-            this.verzio.TabIndex = 0;
-            this.verzio.Text = "S-TKE  Ver.:";
-            // 
-            // errorProvider
-            // 
-            this.errorProvider.ContainerControl = this;
-            // 
-            // Login
-            // 
-            this.AcceptButton = this.rendben;
-            this.CancelButton = this.megsem;
-            this.ClientSize = new System.Drawing.Size(413, 209);
-            this.ControlBox = false;
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "Login";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Activated += new System.EventHandler(this.Bejelentkezes_Activated);
-            this.Load += new System.EventHandler(this.Bejelentkezes_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
-            this.ResumeLayout(false);
-
+			this.components = new System.ComponentModel.Container();
+			ComponentResourceManager componentResourceManager = new ComponentResourceManager(typeof(Login));
+			this.panel1 = new Panel();
+			this.label3 = new Label();
+			this.panel2 = new Panel();
+			this.pictureBox1 = new PictureBox();
+			this.textPWD = new TextBox();
+			this.textUser = new TextBox();
+			this.label2 = new Label();
+			this.label1 = new Label();
+			this.megsem = new Button();
+			this.rendben = new Button();
+			this.panel3 = new Panel();
+			this.verzio = new Label();
+			this.errorProvider = new ErrorProvider(this.components);
+			this.panel1.SuspendLayout();
+			this.panel2.SuspendLayout();
+			((ISupportInitialize)this.pictureBox1).BeginInit();
+			this.panel3.SuspendLayout();
+			((ISupportInitialize)this.errorProvider).BeginInit();
+			base.SuspendLayout();
+			this.panel1.BackColor = Color.Silver;
+			this.panel1.Controls.Add(this.label3);
+			this.panel1.Dock = DockStyle.Top;
+			this.panel1.Location = new Point(0, 0);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(413, 34);
+			this.panel1.TabIndex = 8;
+			this.label3.AutoSize = true;
+			this.label3.Font = new System.Drawing.Font("Arial", 12f, FontStyle.Bold, GraphicsUnit.Point, 238);
+			this.label3.ForeColor = SystemColors.ButtonHighlight;
+			this.label3.Location = new Point(146, 8);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(116, 19);
+			this.label3.TabIndex = 6;
+			this.label3.Text = "Bejelentkezés";
+			this.panel2.Controls.Add(this.pictureBox1);
+			this.panel2.Controls.Add(this.textPWD);
+			this.panel2.Controls.Add(this.textUser);
+			this.panel2.Controls.Add(this.label2);
+			this.panel2.Controls.Add(this.label1);
+			this.panel2.Controls.Add(this.megsem);
+			this.panel2.Controls.Add(this.rendben);
+			this.panel2.Dock = DockStyle.Top;
+			this.panel2.Location = new Point(0, 34);
+			this.panel2.Name = "panel2";
+			this.panel2.Size = new System.Drawing.Size(413, 153);
+			this.panel2.TabIndex = 9;
+			this.pictureBox1.Image = Resources.Calculator_icon;
+			this.pictureBox1.InitialImage = null;
+			this.pictureBox1.Location = new Point(13, 18);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(109, 121);
+			this.pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+			this.pictureBox1.TabIndex = 12;
+			this.pictureBox1.TabStop = false;
+			this.textPWD.Location = new Point(247, 49);
+			this.textPWD.MaxLength = 15;
+			this.textPWD.Name = "textPWD";
+			this.textPWD.Size = new System.Drawing.Size(124, 21);
+			this.textPWD.TabIndex = 7;
+			this.textPWD.UseSystemPasswordChar = true;
+			this.textUser.Location = new Point(247, 21);
+			this.textUser.MaxLength = 30;
+			this.textUser.Name = "textUser";
+			this.textUser.Size = new System.Drawing.Size(124, 21);
+			this.textUser.TabIndex = 6;
+			this.label2.AutoSize = true;
+			this.label2.Location = new Point(162, 52);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(45, 15);
+			this.label2.TabIndex = 10;
+			this.label2.Text = "Jelszó:";
+			this.label1.AutoSize = true;
+			this.label1.Location = new Point(162, 24);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(63, 15);
+			this.label1.TabIndex = 8;
+			this.label1.Text = "Azonosító:";
+			this.megsem.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+			this.megsem.Image = Resources.cancel;
+			this.megsem.ImageAlign = ContentAlignment.MiddleLeft;
+			this.megsem.Location = new Point(277, 90);
+			this.megsem.Name = "megsem";
+			this.megsem.Size = new System.Drawing.Size(94, 38);
+			this.megsem.TabIndex = 11;
+			this.megsem.Text = "Mégsem";
+			this.megsem.TextAlign = ContentAlignment.MiddleRight;
+			this.megsem.UseVisualStyleBackColor = true;
+			this.rendben.Image = Resources.accept;
+			this.rendben.ImageAlign = ContentAlignment.MiddleLeft;
+			this.rendben.Location = new Point(165, 90);
+			this.rendben.Name = "rendben";
+			this.rendben.Size = new System.Drawing.Size(97, 38);
+			this.rendben.TabIndex = 9;
+			this.rendben.Text = "Rendben";
+			this.rendben.TextAlign = ContentAlignment.MiddleRight;
+			this.rendben.UseVisualStyleBackColor = true;
+			this.rendben.Click += new EventHandler(this.rendben_Click);
+			this.panel3.BackColor = SystemColors.Control;
+			this.panel3.Controls.Add(this.verzio);
+			this.panel3.Dock = DockStyle.Fill;
+			this.panel3.Location = new Point(0, 187);
+			this.panel3.Name = "panel3";
+			this.panel3.Size = new System.Drawing.Size(413, 22);
+			this.panel3.TabIndex = 10;
+			this.verzio.AutoSize = true;
+			this.verzio.Font = new System.Drawing.Font("Arial", 8.25f, FontStyle.Regular, GraphicsUnit.Point, 238);
+			this.verzio.Location = new Point(141, 4);
+			this.verzio.Name = "verzio";
+			this.verzio.Size = new System.Drawing.Size(65, 14);
+			this.verzio.TabIndex = 0;
+			this.verzio.Text = "S-TKE  Ver.:";
+			this.errorProvider.ContainerControl = this;
+			base.AcceptButton = this.rendben;
+			base.CancelButton = this.megsem;
+			base.ClientSize = new System.Drawing.Size(413, 209);
+			base.ControlBox = false;
+			base.Controls.Add(this.panel3);
+			base.Controls.Add(this.panel2);
+			base.Controls.Add(this.panel1);
+			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9f, FontStyle.Regular, GraphicsUnit.Point, 238);
+			base.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+//			base.Icon = (System.Drawing.Icon)componentResourceManager.GetObject("$this.Icon");
+			base.Name = "Login";
+			base.StartPosition = FormStartPosition.CenterScreen;
+			base.Activated += new EventHandler(this.Bejelentkezes_Activated);
+			base.Load += new EventHandler(this.Bejelentkezes_Load);
+			this.panel1.ResumeLayout(false);
+			this.panel1.PerformLayout();
+			this.panel2.ResumeLayout(false);
+			this.panel2.PerformLayout();
+			((ISupportInitialize)this.pictureBox1).EndInit();
+			this.panel3.ResumeLayout(false);
+			this.panel3.PerformLayout();
+			((ISupportInitialize)this.errorProvider).EndInit();
+			base.ResumeLayout(false);
 		}
 
 		private void rendben_Click(object sender, EventArgs e)

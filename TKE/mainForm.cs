@@ -153,129 +153,103 @@ namespace TKE
 
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.kilépésToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lekerdezesekToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dolgozókSzerintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kilométerElszámolásToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.összesítettElszámolásToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.törzsadatokToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dolgozokToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kódtáblákToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panelMain = new System.Windows.Forms.Panel();
-            this.userNev = new System.Windows.Forms.Label();
-            this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1008, 24);
-            this.menuStrip1.TabIndex = 8;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // kilépésToolStripMenuItem
-            // 
-            this.kilépésToolStripMenuItem.Image = global::TKE.Properties.Resources.power;
-            this.kilépésToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
-            this.kilépésToolStripMenuItem.Name = "kilépésToolStripMenuItem";
-            this.kilépésToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
-            this.kilépésToolStripMenuItem.Text = "Kilépés";
-            this.kilépésToolStripMenuItem.Click += new System.EventHandler(this.kilépésToolStripMenuItem_Click);
-            // 
-            // lekerdezesekToolStripMenuItem
-            // 
-            this.lekerdezesekToolStripMenuItem.Image = global::TKE.Properties.Resources.info;
-            this.lekerdezesekToolStripMenuItem.Name = "lekerdezesekToolStripMenuItem";
-            this.lekerdezesekToolStripMenuItem.Size = new System.Drawing.Size(137, 24);
-            this.lekerdezesekToolStripMenuItem.Text = "Lekérdezések";
-            // 
-            // dolgozókSzerintToolStripMenuItem
-            // 
-            this.dolgozókSzerintToolStripMenuItem.Name = "dolgozókSzerintToolStripMenuItem";
-            this.dolgozókSzerintToolStripMenuItem.Size = new System.Drawing.Size(241, 24);
-            this.dolgozókSzerintToolStripMenuItem.Text = "Túlóra elszámolás";
-            this.dolgozókSzerintToolStripMenuItem.Click += new System.EventHandler(this.dolgozókSzerintToolStripMenuItem_Click);
-            // 
-            // kilométerElszámolásToolStripMenuItem
-            // 
-            this.kilométerElszámolásToolStripMenuItem.Name = "kilométerElszámolásToolStripMenuItem";
-            this.kilométerElszámolásToolStripMenuItem.Size = new System.Drawing.Size(241, 24);
-            this.kilométerElszámolásToolStripMenuItem.Text = "Kilométer elszámolás";
-            this.kilométerElszámolásToolStripMenuItem.Click += new System.EventHandler(this.kilométerElszámolásToolStripMenuItem_Click);
-            // 
-            // összesítettElszámolásToolStripMenuItem
-            // 
-            this.összesítettElszámolásToolStripMenuItem.Name = "összesítettElszámolásToolStripMenuItem";
-            this.összesítettElszámolásToolStripMenuItem.Size = new System.Drawing.Size(241, 24);
-            this.összesítettElszámolásToolStripMenuItem.Text = "Összesített elszámolás";
-            this.összesítettElszámolásToolStripMenuItem.Click += new System.EventHandler(this.összesítettElszámolásToolStripMenuItem_Click);
-            // 
-            // törzsadatokToolStripMenuItem
-            // 
-            this.törzsadatokToolStripMenuItem.Image = global::TKE.Properties.Resources.config;
-            this.törzsadatokToolStripMenuItem.Name = "törzsadatokToolStripMenuItem";
-            this.törzsadatokToolStripMenuItem.Size = new System.Drawing.Size(125, 24);
-            this.törzsadatokToolStripMenuItem.Text = "Törzsadatok";
-            // 
-            // dolgozokToolStripMenuItem
-            // 
-            this.dolgozokToolStripMenuItem.Image = global::TKE.Properties.Resources.User_Clients_01;
-            this.dolgozokToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.White;
-            this.dolgozokToolStripMenuItem.Name = "dolgozokToolStripMenuItem";
-            this.dolgozokToolStripMenuItem.Size = new System.Drawing.Size(145, 24);
-            this.dolgozokToolStripMenuItem.Text = "Dolgozók";
-            this.dolgozokToolStripMenuItem.Click += new System.EventHandler(this.dolgozókToolStripMenuItem_Click);
-            // 
-            // kódtáblákToolStripMenuItem
-            // 
-            this.kódtáblákToolStripMenuItem.Image = global::TKE.Properties.Resources.Library_01;
-            this.kódtáblákToolStripMenuItem.Name = "kódtáblákToolStripMenuItem";
-            this.kódtáblákToolStripMenuItem.Size = new System.Drawing.Size(145, 24);
-            this.kódtáblákToolStripMenuItem.Text = "Beállítás";
-            this.kódtáblákToolStripMenuItem.Click += new System.EventHandler(this.kódtáblákToolStripMenuItem_Click);
-            // 
-            // panelMain
-            // 
-            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(0, 24);
-            this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1008, 706);
-            this.panelMain.TabIndex = 9;
-            // 
-            // userNev
-            // 
-            this.userNev.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.userNev.Location = new System.Drawing.Point(799, 4);
-            this.userNev.Name = "userNev";
-            this.userNev.Size = new System.Drawing.Size(201, 21);
-            this.userNev.TabIndex = 10;
-            this.userNev.Text = "label1";
-            this.userNev.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // mainForm
-            // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1008, 730);
-            this.Controls.Add(this.userNev);
-            this.Controls.Add(this.panelMain);
-            this.Controls.Add(this.menuStrip1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "mainForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Túlóra és Kilométer elszámolás";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.mainForm_FormClosing);
-            this.Load += new System.EventHandler(this.mainForm_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+			ComponentResourceManager componentResourceManager = new ComponentResourceManager(typeof(mainForm));
+			this.menuStrip1 = new MenuStrip();
+			this.kilépésToolStripMenuItem = new ToolStripMenuItem();
+			this.lekerdezesekToolStripMenuItem = new ToolStripMenuItem();
+			this.dolgozókSzerintToolStripMenuItem = new ToolStripMenuItem();
+			this.kilométerElszámolásToolStripMenuItem = new ToolStripMenuItem();
+			this.összesítettElszámolásToolStripMenuItem = new ToolStripMenuItem();
+			this.törzsadatokToolStripMenuItem = new ToolStripMenuItem();
+			this.dolgozokToolStripMenuItem = new ToolStripMenuItem();
+			this.kódtáblákToolStripMenuItem = new ToolStripMenuItem();
+			this.panelMain = new Panel();
+			this.userNev = new Label();
+			this.menuStrip1.SuspendLayout();
+			base.SuspendLayout();
+			this.menuStrip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12f, FontStyle.Regular, GraphicsUnit.Point, 238);
+			ToolStripItemCollection items = this.menuStrip1.Items;
+			ToolStripItem[] toolStripItemArray = new ToolStripItem[] { this.kilépésToolStripMenuItem, this.lekerdezesekToolStripMenuItem, this.törzsadatokToolStripMenuItem };
+			items.AddRange(toolStripItemArray);
+			this.menuStrip1.Location = new Point(0, 0);
+			this.menuStrip1.Name = "menuStrip1";
+			this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 2, 0, 2);
+			this.menuStrip1.Size = new System.Drawing.Size(1008, 28);
+			this.menuStrip1.TabIndex = 8;
+			this.menuStrip1.Text = "menuStrip1";
+			this.kilépésToolStripMenuItem.Image = Resources.power;
+			this.kilépésToolStripMenuItem.ImageTransparentColor = Color.Black;
+			this.kilépésToolStripMenuItem.Name = "kilépésToolStripMenuItem";
+			this.kilépésToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
+			this.kilépésToolStripMenuItem.Text = "Kilépés";
+			this.kilépésToolStripMenuItem.Click += new EventHandler(this.kilépésToolStripMenuItem_Click);
+			ToolStripItemCollection dropDownItems = this.lekerdezesekToolStripMenuItem.DropDownItems;
+			ToolStripItem[] toolStripItemArray1 = new ToolStripItem[] { this.dolgozókSzerintToolStripMenuItem, this.kilométerElszámolásToolStripMenuItem, this.összesítettElszámolásToolStripMenuItem };
+			dropDownItems.AddRange(toolStripItemArray1);
+			this.lekerdezesekToolStripMenuItem.Image = Resources.info;
+			this.lekerdezesekToolStripMenuItem.Name = "lekerdezesekToolStripMenuItem";
+			this.lekerdezesekToolStripMenuItem.Size = new System.Drawing.Size(137, 24);
+			this.lekerdezesekToolStripMenuItem.Text = "Lekérdezések";
+			this.dolgozókSzerintToolStripMenuItem.Name = "dolgozókSzerintToolStripMenuItem";
+			this.dolgozókSzerintToolStripMenuItem.Size = new System.Drawing.Size(241, 24);
+			this.dolgozókSzerintToolStripMenuItem.Text = "Túlóra elszámolás";
+			this.dolgozókSzerintToolStripMenuItem.Click += new EventHandler(this.dolgozókSzerintToolStripMenuItem_Click);
+			this.kilométerElszámolásToolStripMenuItem.Name = "kilométerElszámolásToolStripMenuItem";
+			this.kilométerElszámolásToolStripMenuItem.Size = new System.Drawing.Size(241, 24);
+			this.kilométerElszámolásToolStripMenuItem.Text = "Kilométer elszámolás";
+			this.kilométerElszámolásToolStripMenuItem.Click += new EventHandler(this.kilométerElszámolásToolStripMenuItem_Click);
+			this.összesítettElszámolásToolStripMenuItem.Name = "összesítettElszámolásToolStripMenuItem";
+			this.összesítettElszámolásToolStripMenuItem.Size = new System.Drawing.Size(241, 24);
+			this.összesítettElszámolásToolStripMenuItem.Text = "Összesített elszámolás";
+			this.összesítettElszámolásToolStripMenuItem.Click += new EventHandler(this.összesítettElszámolásToolStripMenuItem_Click);
+			ToolStripItemCollection toolStripItemCollections = this.törzsadatokToolStripMenuItem.DropDownItems;
+			ToolStripItem[] toolStripItemArray2 = new ToolStripItem[] { this.dolgozokToolStripMenuItem, this.kódtáblákToolStripMenuItem };
+			toolStripItemCollections.AddRange(toolStripItemArray2);
+			this.törzsadatokToolStripMenuItem.Image = Resources.config;
+			this.törzsadatokToolStripMenuItem.Name = "törzsadatokToolStripMenuItem";
+			this.törzsadatokToolStripMenuItem.Size = new System.Drawing.Size(125, 24);
+			this.törzsadatokToolStripMenuItem.Text = "Törzsadatok";
+			this.dolgozokToolStripMenuItem.Image = Resources.User_Clients_01;
+			this.dolgozokToolStripMenuItem.ImageTransparentColor = Color.White;
+			this.dolgozokToolStripMenuItem.Name = "dolgozokToolStripMenuItem";
+			this.dolgozokToolStripMenuItem.Size = new System.Drawing.Size(145, 24);
+			this.dolgozokToolStripMenuItem.Text = "Dolgozók";
+			this.dolgozokToolStripMenuItem.Click += new EventHandler(this.dolgozókToolStripMenuItem_Click);
+			this.kódtáblákToolStripMenuItem.Image = Resources.Library_01;
+			this.kódtáblákToolStripMenuItem.Name = "kódtáblákToolStripMenuItem";
+			this.kódtáblákToolStripMenuItem.Size = new System.Drawing.Size(145, 24);
+			this.kódtáblákToolStripMenuItem.Text = "Beállítás";
+			this.kódtáblákToolStripMenuItem.Click += new EventHandler(this.kódtáblákToolStripMenuItem_Click);
+			this.panelMain.Dock = DockStyle.Fill;
+			this.panelMain.Location = new Point(0, 28);
+			this.panelMain.Name = "panelMain";
+			this.panelMain.Size = new System.Drawing.Size(1008, 702);
+			this.panelMain.TabIndex = 9;
+			this.userNev.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+			this.userNev.Location = new Point(799, 4);
+			this.userNev.Name = "userNev";
+			this.userNev.Size = new System.Drawing.Size(201, 21);
+			this.userNev.TabIndex = 10;
+			this.userNev.Text = "label1";
+			this.userNev.TextAlign = ContentAlignment.MiddleRight;
+			base.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+			base.ClientSize = new System.Drawing.Size(1008, 730);
+			base.Controls.Add(this.userNev);
+			base.Controls.Add(this.panelMain);
+			base.Controls.Add(this.menuStrip1);
+			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12f, FontStyle.Regular, GraphicsUnit.Point, 238);
+			base.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+			base.Icon = (System.Drawing.Icon)componentResourceManager.GetObject("$this.Icon");
+			base.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			base.Name = "mainForm";
+			base.StartPosition = FormStartPosition.CenterScreen;
+			this.Text = "Túlóra és Kilométer elszámolás";
+			base.FormClosing += new FormClosingEventHandler(this.mainForm_FormClosing);
+			base.Load += new EventHandler(this.mainForm_Load);
+			this.menuStrip1.ResumeLayout(false);
+			this.menuStrip1.PerformLayout();
+			base.ResumeLayout(false);
+			base.PerformLayout();
 		}
 
 		private void kilépésToolStripMenuItem_Click(object sender, EventArgs e)
